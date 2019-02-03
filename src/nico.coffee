@@ -54,7 +54,7 @@ class nicoJS
 		color     = color     || @color
 		text      = text      || ''
 		x         = @width
-		y         = Math.random() * (@height - @font_size)
+		y         = Math.random() * (@height - font_size)
 		ele       = document.createElement 'div'
 
 		ele.innerHTML        = text
@@ -77,7 +77,7 @@ class nicoJS
 		for i in [0...len]
 			end = @comments[i].ele.getBoundingClientRect().width * -1
 			if @comments[i].x > end
-				@comments[i].x -= 4
+				@comments[i].x -= 6
 				@comments[i].ele.style.left = @comments[i].x + 'px'
 
 	##
